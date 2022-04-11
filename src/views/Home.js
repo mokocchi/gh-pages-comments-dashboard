@@ -1,9 +1,9 @@
-import { React, useState } from 'react'
+import { React } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import PostsList from '../components/PostsList'
 import { GH_PAGES_NAME } from '../config'
 
-function Home () {
+function Home ({ token }) {
   return (
     <Container>
       <Row>
@@ -17,7 +17,7 @@ function Home () {
         <Col style={{ border: '1px solid black', padding: '2em' }}>
           <Row>
             <Col>
-              <PostsList />
+              <PostsList token={token} />
             </Col>
           </Row>
         </Col>

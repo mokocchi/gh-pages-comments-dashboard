@@ -1,2 +1,3 @@
-export const GH_PAGES_NAME = 'mokocchi.github.io'
-export const GH_PAGES_URL = 'http://localhost:8000'
+export const GH_PAGES_NAME = window._env_ ? window._env_.GH_PAGES_NAME : ''
+export const GH_PAGES_URL = window._env_ ? window._env_.GH_PAGES_URL : ''
+
